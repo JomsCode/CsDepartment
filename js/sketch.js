@@ -18,7 +18,7 @@ function setup() {
 function draw() {
   noStroke();
   if (mouseIsPressed) {
-    fill(255, 0, 200);
+    fill(random()* 255, random()* 255, random()* 255);
     ellipse(pmouseX, pmouseY, 50, 50);
   }
 
