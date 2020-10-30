@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html class="mo">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Online Board</title>
+	<link rel="stylesheet" href="styles/index.css">
+	<link rel="stylesheet" href="styles/org.css">
+	<link rel="stylesheet" href="styles/responsive.css">
+	<link rel="stylesheet" href="styles/robot.css">
+	<script src="libraries/p5.js"></script>
+	<script src="libraries/p5.dom.js"></script>
+</head>
+
+<body>
+	<div class="conBackTop">
+		<div class="backTotop"><a href="#home">Back to top</a></div>
+	</div>
+	<nav id="home">
+		<ul class="nav-list">
+			<li class="name">PASS CS Department</li>
+			<li class="navboard">
+				<div class="linktoboard"><a href="#">Board</a></div>
+				<div class="board-content">
+					<a class="announce" href="#announcements">Announcements</a>
+					
+					<a class ="events"  href="#events">Events</a>
+					<a class="bd" href="#birthday">Birthdays</a>
+					<a class="tut" href="#tutorials">Tutorials</a>
+				</div>
+
+			</li>
+
+			<li class="navboard2">
+				<div class="linktoboard2"> <a href="#">Tools</a></div>
+				<div class="board-content2">
+					<a class="tools" href="#tools"> Tool Resources/Links <br> for Programming </a>
+					<a class="ptools" href="#pwtools">Paper Work Apps</a>
+					<a class="suc" href="#succors">Succor Apps</a>
+				
+			</div>
+			</li>
+		</ul>
+	</nav>
+	<div class="logo">
+		<div class="robot">
+			<div class="head">
+				<div class="antennas">
+					<div class="antennaRight"></div>
+					<div class="antennaLeft"></div>
+				</div>
+				
+				<div class="eyes">
+					<div class="eyeRight"></div>
+					<div class="eyeLeft"></div>
+				</div>
+				<div class="skull"></div>
+				
+
+			</div>
+			<div class="body">
+				<div class="hands">
+					<div class="rightHand">
+						<div class="rightLimb"></div>
+						<div class="rightArm">
+							
+						</div>
+
+					</div>
+					<div class="leftHand">
+						<div class="leftLimb"></div>
+						<div class="leftArm"></div>
+
+					</div>
+				</div>
+				
+				<div class="chest"></div>
+				
+			</div>
+		</div>
+	</div>
+	<section id="board">
+		<div class="categories">
+			<article class="items" id="announcements" >
+				<h1>Announcements</h1>
+				<p>________
+				</p>
+			</article>
+
+			<article class="items" id="events">
+				<h1>Events</h1>
+				<p>________
+				</p>
+			</article>
+
+			<article class="items" id="birthday">
+				<h1>Birthdays</h1>
+				
+				<div class="birthcon">
+					<div class="now">
+						<h4>Today</h4>
+						<p>_
+
+						</p>
+					</div>
+					<div class="month">
+						<h4>This Month</h4>
+						<br>
+						<p>Alyssa Mae Sampaga</p>
+						
+						<p><a class="bdlink" href="Bd_Template_Pass/index.html">View Banner Animation</a></p>
+					</div>
+					<div class="upcoming">
+						<h4>Upcoming Birthdays</h4>
+						<p>_
+						</p>
+					</div>
+				</div>
+			</article>
+
+			<article class="items" id="tutorials">
+				<h1>Tutorials/Refferences</h1>
+				<ul class=" tutlinks">
+					<li><a href="https://developer.mozilla.org/">Mozilla Document Network(MDN)</a></li>
+					<li><a href="https://www.w3schools.com/">W3Schools</a></li>
+					<li><a href="https://www.tutorialspoint.com/">Tutorials Points</a></li>
+					<li><a href="https://www.learnjavaonline.org/">Interactive Java Tutorials</a></li>
+				</ul>				
+			</article>
+		</div>
+	</section>
+	
+	
+	<div id="canvasPosition"></div>
+	<section id="board2">
+		<div class="categories">
+			<article class="items" id="tools" >
+				<h1>Resouces/Links Tools for Programming </h1>
+				<table >
+					<tr>
+						<th>Programming Languages</th>
+						<th>For PC</th>
+						<th>For Android</th>
+					</tr>
+					<tr>
+						<td >C</td>
+						
+						<td  >TurboC4 
+							<a href="http://www.technorange.com/wp-
+							content/uploads/Turbo%20C%2B%2B%204.0%20Windows%207%20Windows%208%2064Bit%20Versi
+							on.exe
+							https://turbo-c.soft32.com/ﬁle-download/1247465/?">
+							Download
+							</a>
+						</td>
+
+						<td >
+						   <ul>
+							<li>
+							TurboCdroid
+							<a href="https://play.google.com/store/apps/details?id=www.turboc8.com.turbocdroider">
+								Download
+							</a>
+							</li>
+							<li>Coding C
+								<a href="https://play.google.com/store/apps/details?id=com.kvassyu.coding.c">
+									Download
+								</a>
+
+							</li>
+						   </ul>
+						</td>
+					</tr>
+					<tr>
+						<td>Java</td>
+						<td>
+							<ul><li>Netbeans 32 bit
+								<a href="http://download.oracle.com/otn-pub/java/jdk-nb/8u111-8.2/jdk-8u111-nb-8_2-windows-i586.exe">
+										Download
+									</a>
+		
+								</li>
+								<li>Netbeans 64 bit
+									<a href="http://download.oracle.com/otn-pub/java/jdk-nb/8u111-8.2/jdk-8u111-nb-8_2-windows-x64.exe">
+										Download
+									</a>
+		
+								</li>
+								<br>
+
+								<li>If those links above did'nt work you can manually download them here
+									<br>
+									<a href="https://www.oracle.com/technetwork/java/javase/downloads/jdk-netbeans-jsp-3413139-esa.html">
+										Visit
+									</a>
+
+								</li>
+								<br>
+								<li> Eclipse 32/64 bit
+									<a href="https://www.eclipse.org/downloads/download.php?ﬁle=/technology/epp/downloads/release/2020-
+										06/R/eclipse-java-2020-06-R-win32-x86_64.zip&mirror_id=1142">
+										Download
+									</a>
+								</li>
+							</ul>
+						</td>
+						<td><ul>
+							<li>JvDroid
+								<a href="https://play.google.com/store/apps/details?id=ru.iiec.jvdroid">
+									Download
+								</a>
+							</li>
+							<li>Java N-IDE
+								<a href="https://play.google.com/store/apps/details?id=com.duy.compiler.javanide">
+									Download
+								</a>
+							</li>
+						</ul></td>
+
+					</tr>
+					<tr>
+						<th>Web Development IDE</th>
+						<td>Microsoft Visual Studio Code <br><a href="https://aka.ms/win32-user-stable">Download</a></td>
+						<td>Acode <br><a href="https://play.google.com/store/apps/details?id=com.foxdebug.acodefree">Download</a></td>
+					</tr>
+					
+				</table>
+				<h4>Complete Keyboard Keys For Android</h4>
+				<br>
+				<p>Hackers Keyboard </p>
+				<a href="https://play.google.com/store/apps/details?id=org.pocketworkstation.pckeyboard">Download</a>
+
+
+			</article>
+
+			<article class="items" id="pwtools">
+				<h1>Paper Work Apps</h1>
+				<ul>
+					For Android Only
+					<li>
+						Office <br>
+						<a href="https://play.google.com/store/apps/details?id=com.microsoft.oﬃce.oﬃcehubrow">Download</a>
+					</li>
+					<li>
+						WPS <br>
+						<a href="https://play.google.com/store/apps/details?id=com.microsoft.oﬃce.oﬃcehubrow">Download</a>
+					</li>
+				</ul>
+			</article>
+
+			<article class="items" id="succors">
+				<h1>Succor Apps</h1>
+				<div>
+					<h3>Ambience</h3>
+					 <br>
+					 Pc Version
+					 <br>
+					 
+					<h5>
+					 
+						Ambience Music 
+					 <br>
+					</h5>
+					<a href="Ambience Music.zip" >Download</a>
+				</div>
+				<br>
+				<div>
+					<h5>Android Version <br>
+						Sleepa</h5>
+					<a href="https://play.google.com/store/apps/details?id=net.relaxio.sleepo">
+						Download
+					</a>
+				</div>
+				<div>
+					<br>
+					<h3>Programming Game</h3>
+					<br>
+					<h5>Programming Hero 
+						</h4>
+					<a href="https://play.google.com/store/apps/details?id=com.learnprogramming.codecamp">Download</a>
+				</div>
+
+			</article>
+		</div>
+	</section>
+
+	<footer>
+		
+		<ul>
+			
+			<li> <a href="#home">PASS College Page</a></li>
+			<li><a href="#home">Computer Science Page</a></li>
+		</ul>
+		<div class="dev">
+			<p>This is still under development</p>
+		</div>			
+	</footer>
+	
+	
+
+	<script src="js/sketch.js"></script>
+</body>
+
+</html>
