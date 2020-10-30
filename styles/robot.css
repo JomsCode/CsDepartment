@@ -1,0 +1,277 @@
+.logo {
+  display: flex;
+  align-items: flex-end;
+}
+
+/* ROBOT */
+.robot {
+  position: absolute;
+  overflow: visible;
+  transform: translateX(50px);
+  animation: entranceAnimation 2s ease-out;
+}
+/* HEAD */
+.head {
+  transition: 1s;
+}
+.skull {
+  margin-bottom: 5px;
+  width: 0;
+  height: 0;
+  border-top: 100px solid lawngreen;
+  border-left: 100px solid lawngreen;
+  border-right: 100px solid lawngreen;
+  border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
+}
+
+.antennas {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  top: 85px;
+}
+.antennaLeft,
+.antennaRight {
+  width: 10px;
+  height: 80px;
+
+  background-color: lawngreen;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.antennaLeft {
+  transform: rotate(35deg);
+  margin-left: 80px;
+}
+.antennaRight {
+  transform: rotate(-35deg);
+  margin-right: 80px;
+}
+.eyes {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  top: 85px;
+  animation: idleEyes 2s ease-in-out 6.7s;
+}
+
+.eyeLeft,
+.eyeRight {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: black;
+  float: left;
+  margin: 25px;
+  transition: 1s;
+}
+/* END HEAD */
+
+/* BODY */
+.hands {
+  position: absolute;
+  top: 70px;
+}
+.rightArm,
+.rightLimb,
+.leftArm,
+.leftLimb {
+  width: 50px;
+  height: 180px;
+}
+/* .rightArm,
+.leftArm {
+  height: 200px;
+} */
+.rightArm {
+  background-color: lawngreen;
+}
+.leftArm {
+  background-color: lawngreen;
+}
+
+.leftArm,
+.rightArm {
+  border-radius: 25px;
+}
+
+.rightHand {
+  position: absolute;
+  left: -55px;
+  transform: rotate(0deg);
+  animation: idleRightHand 2s ease-in-out 6.7s;
+}
+.leftHand {
+  position: absolute;
+  left: 205px;
+  transition: 1s;
+  animation: wave 5s ease-in-out 2s;
+}
+.chest {
+  width: 200px;
+  height: 100px;
+  background-color: lawngreen;
+}
+
+/* END HEAD */
+
+/* ANIMATION */
+
+/* INTERACTION */
+
+/* HAND WAVE */
+.robot:hover .leftHand {
+  transform: rotate(-150deg);
+
+  transition: 1s;
+}
+
+/* HEAD EMO */
+.robot:hover .head {
+  transform: rotate(5deg) translateY(10px);
+
+  transition: 1s;
+}
+.robot:hover .eyeLeft {
+  border-radius: 0%;
+  height: 5px;
+  transition: 1s;
+}
+/* .robot:hover .eyeRight {
+  border-radius: 0%;
+  height: 1px;
+  transition: 1s;
+} */
+
+/* .robot:hover #board {
+  transform: rotate(-20deg);
+
+  transition: 1s;
+} */
+
+/* ENTRANCE */
+@keyframes entranceAnimation {
+  0% {
+    transform: translateX(-250px);
+  }
+  100% {
+    transform: translateX(50px);
+  }
+}
+
+/* EYES IDLE */
+@keyframes idleEyes {
+  0% {
+    top: 85px;
+    left: 0px;
+  }
+  50% {
+    top: 100px;
+    left: 10px;
+  }
+  100% {
+    left: 0px;
+    top: 85px;
+  }
+}
+@keyframes idleWhenView {
+  0% {
+    top: 85px;
+    left: 0px;
+  }
+  50% {
+    top: 100px;
+    left: 10px;
+  }
+  100% {
+    left: 0px;
+    top: 85px;
+  }
+}
+/* RIGHT HAND IDLE */
+
+@keyframes idleRightHand {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-40deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+/* WAVE */
+@keyframes wave {
+  0% {
+    transform: rotate(0deg);
+  }
+  30% {
+    transform: rotate(-160deg);
+  }
+  40% {
+    transform: rotate(-140deg);
+  }
+  50% {
+    transform: rotate(-160deg);
+  }
+  60% {
+    transform: rotate(-140deg);
+  }
+  70% {
+    transform: rotate(-160deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+/* END ANIMATION */
+
+/* @media only screen and (max-width: 440px) {
+  .skull {
+    border-top: 75px solid lawngreen;
+    border-left: 75px solid lawngreen;
+    border-right: 75px solid lawngreen;
+    border-top-left-radius: 75px;
+    border-top-right-radius: 75px;
+  }
+  .chest {
+    width: 150px;
+    height: 75px;
+  }
+  .rightArm,
+  .rightLimb,
+  .leftArm,
+  .leftLimb {
+    width: 35px;
+    height: 120px;
+  }
+  .eyes {
+    top: 65px;
+    left: -15px;
+
+    animation: idleEyesTiny 2s ease-in-out 6.7s;
+  }
+  .eyeRight,
+  .eyeLeft {
+    width: 10px;
+    height: 10px;
+  }
+}
+@keyframes idleEyesTiny {
+  0% {
+    top: 65px;
+    left: 0px;
+  }
+  50% {
+    top: 80px;
+    left: 10px;
+  }
+  100% {
+    left: 0px;
+    top: 65px;
+  }
+} */

@@ -1,0 +1,33 @@
+@media only screen and (max-width: 935px) {
+  #board2 .categories {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media only screen and (max-width: 735px) {
+  #board2 .categories {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .categories {
+    grid-template-columns: 1fr;
+  }
+
+  .logo {
+    min-height: 700px;
+  }
+}
+@media only screen and (max-width: 593px) {
+  .nav-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .board-content,
+  .board-content2 {
+    left: 0;
+  }
+  .name {
+    grid-column: 1/-1;
+  }
+}
