@@ -11,11 +11,13 @@
 	<link rel="stylesheet" href="styles/org.css">
 	<link rel="stylesheet" href="styles/responsive.css">
 	<link rel="stylesheet" href="styles/robot.css">
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.js" integrity="sha512-rMaqGbYalDaQz0lWNF2L8DHPtf4NW+gSZomExS0LcsNyRS4Rmj21+dt97XfXCZE/E569eX72Bh//Jt1EpStgiA==" crossorigin="anonymous"></script>
-	<script src="libraries/p5.dom.js"></script>
+	
+	
+	<!-- <script src="libraries/p5.dom.js"></script> -->
 </head>
 
 <body>
+
 	<div class="conBackTop">
 		<div class="backTotop"><a href="#home">Back to top</a></div>
 	</div>
@@ -85,18 +87,22 @@
 	<section id="board">
 		<div class="categories">
 			<article class="items" id="announcements" >
+				<img src="pictures/logos/Announcement.png" alt="Announcement">
+				
 				<h1>Announcements</h1>
 				<p>________
 				</p>
 			</article>
 
 			<article class="items" id="events">
+				<img src="pictures/logos/event.png" alt="event">
 				<h1>Events</h1>
 				<p>________
 				</p>
 			</article>
 
 			<article class="items" id="birthday">
+				<img src="pictures/logos/bdaylogo.png" alt="bdaylogo">
 				<h1>Birthdays</h1>
 				
 				<div class="birthcon">
@@ -109,9 +115,9 @@
 					<div class="month">
 						<h4>This Month</h4>
 						<br>
-						<p>Alyssa Mae Sampaga</p>
+						<p>_</p>
 						
-						<p><a class="bdlink" href="Bd_Template_Pass/index.html">View Banner Animation</a></p>
+						
 					</div>
 					<div class="upcoming">
 						<h4>Upcoming Birthdays</h4>
@@ -122,6 +128,7 @@
 			</article>
 
 			<article class="items" id="tutorials">
+				<img src="pictures/logos/tutorialref.png" alt="tutorialref">
 				<h1>Tutorials/Refferences</h1>
 				<ul class=" tutlinks">
 					<li><a href="https://developer.mozilla.org/">Mozilla Document Network(MDN)</a></li>
@@ -134,10 +141,11 @@
 	</section>
 	
 	
-	<div id="canvasPosition"></div>
+	<div id="canvasPosition">	<canvas class="canvas"></canvas></div>
 	<section id="board2">
 		<div class="categories">
 			<article class="items" id="tools" >
+				<img src="pictures/logos/resource.png" alt="resource">
 				<h1>Resouces/Links Tools for Programming </h1>
 				<table >
 					<tr>
@@ -151,8 +159,7 @@
 						<td  >TurboC4 
 							<a href="http://www.technorange.com/wp-
 							content/uploads/Turbo%20C%2B%2B%204.0%20Windows%207%20Windows%208%2064Bit%20Versi
-							on.exe
-							https://turbo-c.soft32.com/ﬁle-download/1247465/?">
+							on.exe">
 							Download
 							</a>
 						</td>
@@ -237,6 +244,7 @@
 			</article>
 
 			<article class="items" id="pwtools">
+				<img src="pictures/logos/paperwork.png" alt="paperwork">
 				<h1>Paper Work Apps</h1>
 				<ul>
 					For Android Only
@@ -252,6 +260,7 @@
 			</article>
 
 			<article class="items" id="succors">
+				<img src="pictures/logos/help.png" alt="help">
 				<h1>Succor Apps</h1>
 				<div>
 					<h3>Ambience</h3>
@@ -290,18 +299,24 @@
 	<footer>
 		
 		<ul>
-			
-			<li> <a href="#home">PASS College Page</a></li>
-			<li><a href="#home">Computer Science Page</a></li>
+			<li>Visit our Facebook Page    @ </li>
+			<li> <a href=""> <img src="pictures/logos/facebook.png" alt="facebook"> PASS College Page</a></li>
+			<li><a href="#home"> <img src="pictures/logos/facebook.png" alt="facebook"> Computer Science Page</a></li>
 		</ul>
 		<div class="dev">
+			<img src="pictures/logos/underDev.png" alt="underDev">
 			<p>This is still under development</p>
+
 		</div>			
 	</footer>
 	
-	
 
-	<script src="js/sketch.js"></script>
+
+	
+	<script src="js/handyFunction.js"></script>
+	<script src="js/index.js"></script>
+	<script src="js/Particles.js"></script>
+
 </body>
 
 </html>
