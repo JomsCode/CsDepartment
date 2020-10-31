@@ -1,0 +1,11 @@
+@media only screen and (max-width: 576px) {
+ .set2 {
+  display: none;
+ }
+ .set3 {
+  position: absolute;
+  transform: scale(0.4) rotateX(195deg);
+  background: transparent;
+  filter: blur(3px);
+ }
+}
