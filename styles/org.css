@@ -1,70 +1,70 @@
 /* NAV */
 nav {
-  /* top: 0;
+ /* top: 0;
   width: 0;
   */
-  background-color: #082848;
+ background-color: #082848;
 }
 .nav-list {
-  display: flex;
-  flex-wrap: wrap;
-  list-style: none;
-  justify-content: center;
+ display: flex;
+ flex-wrap: wrap;
+ list-style: none;
+ justify-content: center;
 }
 .nav-list .navboard .board-content a,
 .nav-list .navboard .board-content div,
 .nav-list .navboard2 .board-content2 a {
-  font-size: 12pt;
+ font-size: 12pt;
 }
 
 .name {
-  color: white;
+ color: white;
 }
 .nav-list a {
-  color: white;
+ color: white;
 }
 .nav-list li a {
-  display: block;
-  text-decoration: none;
-  text-align: center;
-  font-size: 15pt;
-  padding: 20px 30px;
+ display: block;
+ text-decoration: none;
+ text-align: center;
+ font-size: 15pt;
+ padding: 20px 30px;
 }
 .navboard,
 .navboard2 {
-  position: relative;
-  display: inline-block;
+ position: relative;
+ display: inline-block;
 }
 
 .board-content,
 .board-content2 {
-  display: none;
-  position: absolute;
-  background-color: #082848;
-  left: -25px;
-  box-shadow: 0px 8px 16px 0 rgba(0, 0, 0, 2);
+ display: none;
+ position: absolute;
+ background-color: #082848;
+ left: -25px;
+ box-shadow: 0px 8px 16px 0 rgba(0, 0, 0, 2);
 }
 
 .navboard .board-content a:hover {
-  background-color: #0a7697;
+ background-color: #0a7697;
 }
 
 .navboard2 .board-content2 a:hover {
-  background-color: #0a7697;
+ background-color: #0a7697;
 }
 
 .navboard:hover .linktoboard {
-  background-color: #10a8d8;
+ background-color: #10a8d8;
 }
 .navboard2:hover .linktoboard2 {
-  background-color: #10a8d8;
+ background-color: #10a8d8;
 }
 
 .navboard:hover .board-content {
-  display: block;
+ display: block;
 }
 .navboard2:hover .board-content2 {
-  display: block;
+ display: block;
 }
 
 /* END NAV */
@@ -72,43 +72,44 @@ nav {
 /* BOARDS */
 
 #board {
-  padding: 60px 0;
-  background-color: #002860;
+ padding: 60px 0;
+ background-color: #002860;
 }
 
 .categories {
-  max-width: 95vw;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-column-gap: 20px;
-  color: white;
+ max-width: 95vw;
+ margin: 0 auto;
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+ grid-column-gap: 20px;
+ color: white;
 }
 .items {
-  text-align: center;
-  margin: 20px 0;
+ text-align: center;
+ margin: 20px 0;
 }
 .items h1 {
-  font-size: 30px;
-  letter-spacing: 2px;
-  margin: 30px 0;
+ font-size: 30px;
+ letter-spacing: 2px;
+ margin: 30px 0;
 }
 .items p {
-  width: 75%;
-  margin: 0 auto;
+ width: 75%;
+ margin: 0 auto;
 }
 
 /* BOARD2 */
 #board2 {
-  background-color: teal;
+ background-color: #082848;
 }
 #board2 .categories {
-  max-width: 95vw;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-column-gap: 20px;
-  color: white;
+ max-width: 95vw;
+ margin: 0 auto;
+ display: grid;
+ grid-template-columns: repeat(3, 1fr);
+ grid-column-gap: 20px;
+
+ color: white;
 }
 
 /* END BOARDS */
@@ -117,125 +118,137 @@ nav {
 
 /* TABLE IN TOOLS */
 table {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: space-evenly;
 }
 td {
-  padding: 10px;
+ padding: 10px;
 }
 /* TABLE ROW COLOR */
 table tr:nth-child(odd) {
-  background-color: transparent;
+ background-color: transparent;
 }
 table tr:nth-child(even) {
-  background-color: gray;
+ background-color: #002860;
 }
 /* END TABLE IN TOOLS */
 
 /* TUTORIAL/REFFERENCE */
 .tutlinks li {
-  margin: 25px;
+ margin: 25px;
 }
 
 .tutlinks li a:link {
-  font-size: 15pt;
-  color: white;
+ font-size: 15pt;
+ color: white;
 }
 .tutlinks li a:hover {
-  color: rgb(148, 216, 84);
+ color: rgb(148, 216, 84);
 }
 .tutlinks li a:visited {
-  color: rgb(47, 255, 116);
+ color: rgb(47, 255, 116);
 }
 /* END TUTORIAL PREFERRENCE */
 
 /* PAPER WORK TOOLS */
 #pwtools ul li {
-  margin: 50px;
+ margin: 50px;
 }
 /* END PAPER WORK TOOLS */
 
 /* BIRTHDAYS */
 .now p a:link {
-  color: #40c8c8;
+ color: #40c8c8;
 }
 .month p a {
-  color: #40c8c8;
+ color: #40c8c8;
 }
 .month p a:hover {
-  color: forestgreen;
+ color: forestgreen;
 }
 .upcoming p a {
-  color: #40c8c8;
+ color: #40c8c8;
 }
 .birthcon {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+ display: flex;
+ flex-direction: column;
+ flex-wrap: wrap;
 }
 .birthcon div {
-  padding: 10px 0;
+ padding: 10px 0;
 }
 /* END BIRTHDAY */
 
 /* CANVAS */
 #canvasPosition {
-  min-height: 650px;
-  display: flex;
+ min-height: 650px;
+ display: flex;
 }
 /* END CANVAS */
 
 /* FOOTER */
 footer {
-  display: flex;
-  flex-wrap: wrap;
+ display: flex;
+ flex-wrap: wrap;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
 
-  align-items: center;
-  justify-content: center;
-
-  background-color: black;
+ background-color: black;
 }
 footer ul {
-  color: white;
+ color: white;
 }
 footer li {
-  display: inline-block;
-  padding: 20px;
-  color: white;
+ display: inline-block;
+ padding: 20px;
+ color: white;
 }
 footer li a {
-  color: white;
+ color: white;
+ margin: 5px;
+}
+footer li a img {
+ position: relative;
+ transform: translateY(4px) translateX(-5px);
+ width: 20px;
+ height: 20px;
+}
+.dev img {
+ margin: 10px;
 }
 
 /* END FOOTER */
 
 /* ON-FLY BUTTON */
-.conBackTop {
-  display: flex;
-  position: fixed;
-  width: 100%;
-  top: 90%;
-  justify-content: flex-end;
-  align-items: flex-end;
-}
+/* .conBackTop {
+ display: flex;
+ position: fixed;
+ width: 100%;
+ top: 90%;
+
+ justify-content: flex-end;
+ align-items: flex-end;
+} */
 .backTotop a {
-  color: white;
+ color: white;
 }
 .backTotop {
-  margin: 15px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100px;
-  height: 50px;
+ margin: 15px;
+ position: absolute;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ width: 100px;
+ height: 50px;
 
-  background: linear-gradient(90deg, #085880, #40c8c8);
-  /* opacity: 0; */
-  border-radius: 30px;
+ background: linear-gradient(90deg, #085880, #40c8c8);
+ opacity: 0;
+ border-radius: 30px;
 
-  text-shadow: 1px 1px black;
+ text-shadow: 1px 1px black;
 }
 .backTotop a:link {
-  color: white;
+ color: white;
 }
